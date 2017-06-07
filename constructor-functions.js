@@ -1,3 +1,24 @@
+function Monster (nameParam, scaryParam, specialParam) {
+  // var this = {};
+  this.name = nameParam;
+  this.scariness = scaryParam;
+  this.speciality = specialParam;
+  
+  this.scare = function () {
+    console.log(this.name + ' is scaring you using ' + this.speciality);
+  };
+}
+
+
+var monster3 = new Monster('Cookie Monster', 4, 'Eating Cookies');
+var monster4 = new Monster('Elmo', 1, 'Singing?');
+var monster5 = new Monster('Randall', 6, 'Invisibility');
+var monster6 = new Monster('Samara', 10, 'Creepy Crawling');
+
+monster3.scare();
+monster4.scare();
+
+
 function Car (brandParam, modelParam, colorParam) {
   // this = {};
   this.brand = brandParam;

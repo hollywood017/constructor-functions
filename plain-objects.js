@@ -1,3 +1,26 @@
+var monster1 = {
+  name: 'Sully',
+  scariness: 10,
+  speciality: 'Roars',
+  
+  scare: function () {
+    console.log(this.name + ' is scaring you using ' + this.speciality);
+  }
+};
+
+monster1.scare();
+
+var monster2 = {};
+monster2.name = 'Snuffeupigus';
+monster2.scariness = 5;
+monster2.speciality = 'Snuffles';
+monster2.scare = function () {
+  console.log(this.name + ' is scaring you using ' + this.speciality);
+};
+
+monster2.scare();
+
+
 var car = {
   brand: 'Acura',
   model: 'NSX',
